@@ -15,12 +15,6 @@
 </head>
 
 <body>
-	<button>
-		<a href="./Image/FotoIphoneCogumelos-FundoIlustrado.jpg" download="Cogumelos">Baixe como Wallpaper </a>	
-	</button>
-	<button>
-		<a href="https://www.zedge.net/wallpaper/d13abced-0761-4f21-b0a1-4c523f15f240" download="Cogumelos">Baixe pelo Zedge</a>	
-	</button>
 	 <a-scene mindar-image="filterMinCF:0.0; filterBeta: 10000; imageTargetSrc: targetsCogu.mind"; color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 
 	    	<a-assets id="hiddenImg">
@@ -32,9 +26,6 @@
 	    <a-entity id="target1" mindar-image-target="targetIndex: 0">
 
 	         <a-image src="./Image/FotoIphoneCogumelos-FundoIlustrado.jpg" opacity="1.0" position="0 0 0" height="1.5" width="1" rotation="0 0 0"></a-image>
-		<a-button>
-			<a-link href="index.html" title="Baixe como Wallpaper" image="#Cogumelos"></a-link>
-		</a-button>
 	    </a-entity>
 
 	    </a-scene>
