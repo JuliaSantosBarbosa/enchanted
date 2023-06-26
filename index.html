@@ -3,14 +3,22 @@
 <html lang="en">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
+	
+	<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
-
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+	<!-- java apara botão-->
+	<script type="text/javascript">
+		AFRAME.registerComponent('startButton',{
+		  init: function () {
+		    //all code here
+		  }
+		});
+	</script>
 
 </head>
 
@@ -24,8 +32,8 @@
 		    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
 	    <a-entity id="target1" mindar-image-target="targetIndex: 0">
-
 	         <a-image src="./Image/FotoIphoneCogumelos-FundoIlustrado.jpg" opacity="1.0" position="0 0 0" height="1.5" width="1" rotation="0 0 0"></a-image>
+	    	 <a-link href="https://www.zedge.net/wallpaper/d13abced-0761-4f21-b0a1-4c523f15f240" title="Cogumelos"></a-link>
 	    </a-entity>
 
 	    </a-scene>
